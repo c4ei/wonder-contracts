@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: AGPL-3.0-or-later
 pragma solidity 0.7.5;
-
+// 887 line constructor() ERC20("MEMOries", "MEMO", 9) ERC20Permit() {
 library LowGasSafeMath {
     /// @notice Returns x + y, reverts if sum overflows uint256
     /// @param x The augend
@@ -726,7 +726,7 @@ abstract contract ERC20Permit is ERC20, IERC2612Permit {
     mapping(address => Counters.Counter) private _nonces;
 
     // keccak256("Permit(address owner,address spender,uint256 value,uint256 nonce,uint256 deadline)");
-    bytes32 public constant PERMIT_TYPEHASH = 0x6e71edae12b1b97f4d1f60370fef10105fa2faae0126114a169c64845d6126c9;
+    bytes32 public constant PERMIT_TYPEHASH = 0xf13b305c9fb9ac22810e48d010d5863898a1a239f97ad1d119dbb2c6f87e5b63;
 
     bytes32 public immutable DOMAIN_SEPARATOR;
 
